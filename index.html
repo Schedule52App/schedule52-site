@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Schedule52 — Field Service Scheduling for Plumbing & HVAC</title>
+<meta name="description" content="Schedule52 is scheduling, dispatch, and customer communication software for plumbing and HVAC field service businesses. Appointment reminders, technician dispatch, invoicing, and more." />
+<style>
+  :root{
+    --bg:#0b1220; --panel:#111a2e; --panel2:#0f1830; --line:#22304d;
+    --ink:#e8eefc; --muted:#9fb0d0; --brand:#3b82f6; --brand2:#60a5fa; --accent:#22c55e;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    background:var(--bg);color:var(--ink);line-height:1.6;-webkit-font-smoothing:antialiased}
+  a{color:var(--brand2);text-decoration:none}
+  a:hover{text-decoration:underline}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+  header{position:sticky;top:0;z-index:20;background:rgba(11,18,32,.85);backdrop-filter:blur(10px);
+    border-bottom:1px solid var(--line)}
+  .nav{display:flex;align-items:center;justify-content:space-between;height:64px}
+  .brand{display:flex;align-items:center;gap:10px;font-weight:800;font-size:20px;letter-spacing:-.3px}
+  .brand .dot{width:28px;height:28px;border-radius:8px;background:linear-gradient(135deg,var(--brand),var(--accent));
+    display:flex;align-items:center;justify-content:center;font-size:14px;color:#fff;font-weight:800}
+  .nav nav{display:flex;gap:26px;align-items:center}
+  .nav nav a{color:var(--muted);font-size:14px;font-weight:600}
+  .nav nav a:hover{color:var(--ink);text-decoration:none}
+  .btn{display:inline-block;background:var(--brand);color:#fff;font-weight:700;font-size:14px;
+    padding:10px 18px;border-radius:10px;border:1px solid transparent}
+  .btn:hover{background:var(--brand2);text-decoration:none}
+  .btn.ghost{background:transparent;border-color:var(--line);color:var(--ink)}
+  .hero{padding:84px 0 60px;text-align:center}
+  .hero h1{font-size:clamp(34px,6vw,56px);line-height:1.08;font-weight:850;letter-spacing:-1.2px;
+    max-width:780px;margin:0 auto 18px}
+  .hero h1 .g{background:linear-gradient(135deg,var(--brand2),var(--accent));-webkit-background-clip:text;
+    background-clip:text;-webkit-text-fill-color:transparent}
+  .hero p{font-size:clamp(16px,2.4vw,20px);color:var(--muted);max-width:600px;margin:0 auto 30px}
+  .cta{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+  .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;padding:30px 0 70px}
+  @media(max-width:760px){.grid{grid-template-columns:1fr}.nav nav{display:none}}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:24px}
+  .card .ic{width:42px;height:42px;border-radius:10px;background:var(--panel2);border:1px solid var(--line);
+    display:flex;align-items:center;justify-content:center;font-size:20px;margin-bottom:14px}
+  .card h3{font-size:17px;margin-bottom:6px}
+  .card p{color:var(--muted);font-size:14px}
+  .section{padding:60px 0;border-top:1px solid var(--line)}
+  .section h2{font-size:clamp(26px,4vw,38px);letter-spacing:-.6px;margin-bottom:14px;text-align:center}
+  .section .lead{color:var(--muted);text-align:center;max-width:620px;margin:0 auto 36px}
+  .rows{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;max-width:840px;margin:0 auto}
+  @media(max-width:760px){.rows{grid-template-columns:1fr}}
+  .row{display:flex;gap:12px;align-items:flex-start;background:var(--panel2);border:1px solid var(--line);
+    border-radius:12px;padding:16px}
+  .row .ck{color:var(--accent);font-weight:800;margin-top:1px}
+  .row b{display:block;font-size:15px}
+  .row span{color:var(--muted);font-size:13.5px}
+  .contact{text-align:center}
+  .contact a.btn{margin-top:8px}
+  footer{border-top:1px solid var(--line);padding:34px 0;color:var(--muted);font-size:13.5px}
+  .foot{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:14px}
+  .foot nav{display:flex;gap:20px;flex-wrap:wrap}
+  .foot nav a{color:var(--muted)}
+  .note{background:var(--panel2);border:1px solid var(--line);border-radius:12px;padding:16px 18px;
+    max-width:720px;margin:24px auto 0;color:var(--muted);font-size:13.5px;text-align:center}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <div class="brand"><span class="dot">S</span> Schedule52</div>
+    <nav>
+      <a href="#features">Features</a>
+      <a href="#how">How it works</a>
+      <a href="#contact">Contact</a>
+      <a href="privacy.html">Privacy</a>
+    </nav>
+    <a class="btn" href="#contact">Get started</a>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="hero">
+    <h1>Field service scheduling, <span class="g">built for the trades</span></h1>
+    <p>Schedule52 helps plumbing and HVAC businesses book jobs, dispatch technicians, send appointment reminders, and get paid — all in one place.</p>
+    <div class="cta">
+      <a class="btn" href="#contact">Request a demo</a>
+      <a class="btn ghost" href="#features">See features</a>
+    </div>
+  </section>
+
+  <section id="features" class="grid">
+    <div class="card"><div class="ic">📅</div><h3>Smart scheduling &amp; dispatch</h3><p>Drag-and-drop calendar, multi-technician routing, and real-time dispatch so the right tech gets to the right job.</p></div>
+    <div class="card"><div class="ic">💬</div><h3>Customer text reminders</h3><p>Automatic appointment confirmations, reminders, and "tech on the way" texts that cut no-shows and keep customers informed.</p></div>
+    <div class="card"><div class="ic">🧾</div><h3>Invoicing &amp; payments</h3><p>Generate invoices, track payments, and sync with QuickBooks so your books stay clean.</p></div>
+    <div class="card"><div class="ic">📍</div><h3>GPS &amp; mapping</h3><p>See where your crews are and optimize routes with built-in mapping.</p></div>
+    <div class="card"><div class="ic">👥</div><h3>Multi-location ready</h3><p>Manage multiple locations, teams, and technicians from a single secure account.</p></div>
+    <div class="card"><div class="ic">🔒</div><h3>Secure &amp; reliable</h3><p>Built on modern cloud infrastructure with per-business data isolation.</p></div>
+  </section>
+
+  <section id="how" class="section">
+    <h2>How it works</h2>
+    <p class="lead">From the first call to final payment, Schedule52 keeps the whole job moving.</p>
+    <div class="rows">
+      <div class="row"><span class="ck">✓</span><div><b>Book the job</b><span>Schedule an appointment in seconds and capture the customer's details and consent to receive texts.</span></div></div>
+      <div class="row"><span class="ck">✓</span><div><b>Dispatch the tech</b><span>Assign the right technician and send them the job details on the go.</span></div></div>
+      <div class="row"><span class="ck">✓</span><div><b>Keep the customer informed</b><span>Automatic confirmation, reminder, and on-the-way text messages.</span></div></div>
+      <div class="row"><span class="ck">✓</span><div><b>Get paid</b><span>Invoice on site, take payment, and sync to your accounting.</span></div></div>
+    </div>
+    <div class="note">Schedule52 sends transactional text messages — appointment confirmations, reminders, and service notifications — only to customers who provide their phone number and agree to receive them. Reply STOP to opt out or HELP for help at any time. Message and data rates may apply. See our <a href="privacy.html">Privacy Policy</a> for details.</div>
+  </section>
+
+  <section id="contact" class="section contact">
+    <h2>Get in touch</h2>
+    <p class="lead">Want a demo or have questions? We'd love to hear from you.</p>
+    <p><a class="btn" href="mailto:support@schedule52.com">Email support@schedule52.com</a></p>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <div>© <span id="yr"></span> Schedule52. All rights reserved.</div>
+    <nav>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Service</a>
+      <a href="mailto:support@schedule52.com">Contact</a>
+    </nav>
+  </div>
+</footer>
+<script>document.getElementById('yr').textContent=new Date().getFullYear();</script>
+</body>
+</html>
